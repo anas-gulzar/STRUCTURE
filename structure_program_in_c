@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+struct student{
+  char name[100];
+  int roll;
+  char course[100];
+  char section;
+  float marks;
+  float percentage;
+};
+
+int main(){
+  struct student anas;
+  strcpy(anas.name,"anas");
+  anas.roll=30;
+  strcpy(anas.course,"BCA");
+  anas.section='a';
+  anas.marks=77;
+  anas.percentage=70;
+
+  printf(" name = %s \n roll = %d \n course = %s \n section = %c \n marks = %.f \n percentage = %.f%%", anas.name , anas.roll , anas.course , anas.section , anas.marks , anas.percentage );
+
+}
